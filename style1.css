@@ -1,0 +1,33 @@
+article{
+    background-color: blue;
+    color:yellow;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#p1
+{
+    color: chocolate;
+    background-color: aqua;
+    font-size: 25px;
+}
+.div1{
+    background-color: crimson;
+    color: aliceblue;
+}
+p#p2{
+background-color: fuchsia;
+}
+h1.hed3{
+    color: goldenrod;
+}
+
+#f1{
+background-color: chocolate;
+padding: 50px;
+border: solid rgb(35, 35, 215) 15px;
+margin: 30px;
+margin-top: 90px;
+border-style: dashed;
+border-radius: 40px;
+}
