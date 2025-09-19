@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aa {
+            display: block;
+            font-size: 25px;
+            color: crimson;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        span {
+            background-color: antiquewhite;
+        }
+
+        .image {
+            border: 3px solid;
+            width: 30%;
+            float: left;
+            margin: 1%;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .sidebar {
+            height: 2000px;
+            background-color: #f8f8f8;
+            width: 25%;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 75%;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .filters {
+            margin-bottom: 20px;
+        }
+
+        .filters span {
+            margin-right: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .skill {
+            width: 100%;
+            border: 3px solid black;
+            background-color: rgb(255, 173, 86);
+            margin: 10px 0;
+        }
+
+        .skill div {
+            height: 30px;
+            text-align: right;
+            color: aliceblue;
+            font-weight: bold;
+            background-color: rgb(79, 179, 95);
+        }
+
+        #skill1child {
+            width: 90%;
+        }
+
+        #skill2child {
+            width: 85%;
+        }
+
+        #skill3child {
+            width: 80%;
+        }
+
+        .cardbody p {
+            /* border: 2px solid blue; */
+            /* display: block; */
+            /* margin-left: 20px; */
+            margin: 0;
+            height: 50px;
+            background-color: rgb(244, 138, 159);
+            padding: 15px;
+        }
+
+        .cardheader {
+            /* border: 3px solid rgb(255, 158, 68); */
+            /* display: block;
+        height: 50px; */
+            padding: 15px;
+            background-color: rgba(127, 222, 246, 0.762);
+        }
+
+        .card {
+            width: 320px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 10px 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            float: left;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            padding: 20px 0;
+        }
+
+        .footer {
+            background: #f7f7f7;
+            padding: 20px;
+        }
+
+        button {
+            background: #5dc1b9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contactme a {
+            border: 2px solid black;
+            color: green;
+            width: 200px;
+            height: 40px;
+            display: inline-block;
+            font-size: 30px;
+        }
+
+        #div3 {
+            background-color: darkseagreen;
+            /* clear: both; */
+            padding: 20px;
+            margin-top: 30px;
+        
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="PROFILEDEMO.jpg" alt="profile">
+
+        <h2>PORTFOLIO</h2>
+        <a href="#portfolio" class="aa">Portfolio</a>
+        <a href="#about" class="aa">About</a>
+        <a href="#contact" class="aa">Contact</a>
+    </div>
+
+
+    <div id="portfolio" class="main">
+
+        <h1> MY PORTFOLIO</h1>
+        <div class="filters">
+            <p style="display: inline;">Filter:</p>
+            <span>ALL</span>
+            <SPAN>DESIGN</SPAN>
+            <SPAN>PHOTOS</SPAN>
+            <SPAN>ART</SPAN>
+        </div>
+
+        <div class="image">
+            <img src="img1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatem rerum necessitatibus ipsa ipsum
+                eum est similique repellendus, iste consequuntur magnam deserunt.</p>
+        </div>
+        <div class="image">
+            <img src="img2.jpg" alt="">
+            <p>Lorembbbbbbbbbbbbbbbbbbbo ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, facere. Ea neque
+                aut tenetur sequi impedit autem fuga debitis dolorem, qui iusto?</p>
+        </div>
+        <div class="image">
+            <img src="img3.jpg" alt="">
+            <p> p?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, accusamus aut nam enim repellat
+                doloribus, dolore repudiandae placeat dolorem, iste iure accusantium explicabo.</p>
+        </div>
+
+        <div class="image">
+            <img src="img4.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum expedita saepe ab fuga perferendis
+                tempore excepturi nam eius, quia labore accusantium eaque veniam.</p>
+
+        </div>
+        <div class="image">
+            <img src="img5.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum expedita saepe ab fuga perferendis
+                tempore excepturi nam eius, quia labore accusantium eaque veniam.</p>
+
+        </div>
+        <div class="image">
+            <img src="img6.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum expedita saepe ab fuga perferendis
+                tempore excepturi nam eius, quia labore accusantium eaque veniam.</p>
+
+        </div>
+    </div>
+
+    <div id="about" class="main">
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eos suscipit adipisci cum id, modi nam! Ipsam
+            enim unde dolor rerum dolorum, ullam fugiat quia voluptates quam sapiente consectetur similique aliquid
+            incidunt molestiae placeat dolores, laudantium ea hic blanditiis optio maiores illum mollitia pariatur?</p>
+        <h2>Technical Skills</h2>
+        <div class="skill">
+            <div id="skill1child">photography -95%</div>
+        </div>
+        <div class="skill">
+            <div id="skill2child">web design -85%</div>
+        </div>
+        <div class="skill">
+            <div id="skill3child">photoshop -80%</div>
+        </div>
+    </div>
+
+    <div id="charge">
+        <h2>How much i charge</h2>
+        <div class="card">
+            <div class="cardheader">BASIC</div>
+            <div class="cardbody">
+                <p>Web Design</p>
+                <p>photography</p>
+                <p>Mail support</p>
+            </div>
+            <div class="price">$10<br><small>per month</small></div>
+            <div class="footer">
+                <button>Sign Up</button>
+            </div>
+
+        </div>
+    <!-- </div> -->
+
+    <div class="card">
+        <div class="cardheader">PRO</div>
+        <div class="cardbody">
+            <p>Web Design</p>
+            <p>photography</p>
+            <p>Mail support</p>
+        </div>
+        <div class="price">$25<br><small>per month</small></div>
+        <div class="footer">
+            <button>Sign Up</button>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="cardheader">PREMIUM</div>
+        <div class="cardbody">
+            <p>Web Design</p>
+            <p>photography</p>
+            <p>Mail support</p>
+        </div>
+        <div class="price">$45<br><small>per month</small></div>
+        <div class="footer">
+            <button>Sign Up</button>
+        </div>
+
+    </div>
+    </div>
+    <br>
+    <br>
+    <div id="div3" class="main">
+        <div class="contactme" id="contact" >
+            <H2>Contact ME</h2>
+            <a href="mailto:gargmahak813@gamil.com">📧 Email</a>
+            <a href="tel:9432516522"> 📞 Phone</a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
