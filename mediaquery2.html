@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading
+        {
+            display: flex;
+            justify-content: center;
+        }
+       
+        @media(min-width:640px)
+        {
+ .container1
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        .child
+        {
+            display:flex;
+            flex-direction: column;
+            background-color: tomato;
+        }
+        .child p{
+            border: 5px solid greenyellow;
+            margin: 5px;
+        }
+    }
+    @media(max-width:640px)
+    {
+        .container1
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .child
+        {
+            background-color: rgb(91, 139, 8);
+            display:flex;
+            flex-direction: column;
+        }
+        .child p{
+            border: 5px solid rgb(18, 85, 4);
+            margin: 5px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">MY PAGE</h1>
+    <div class="container1">
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor laudantium commodi eaque ipsam nihil eligendi vel natus molestias, cupiditate neque mollitia.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur dolore inventore quae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quia vitae laudantium.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, voluptatem?</p>
+
+
+        </div>
+        <div>
+            <img style="width: 300px; height: 250px; border: 5px solid black;" src="img1.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
