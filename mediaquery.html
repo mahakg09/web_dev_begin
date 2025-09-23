@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: rgb(190, 109, 109);
+            display: flex;
+            
+        }
+        .box
+        {
+            /* background-color: orange; */
+            width: 300px;
+            height: 200px;
+            border: 3px solid blue;
+            font-size: 100px;
+            margin: 5px;
+           
+            
+        }
+        @media(min-width:640px)
+        {
+            .container
+            {
+                flex-direction: row;
+            }
+        }
+        @media(max-width:640px)
+        {
+            .container{
+                flex-direction: column;
+            }
+        }
+        #box1
+        {
+background-color: crimson;
+        }
+        #box2
+        {
+            background-color: aqua;
+        }
+        #box3
+        {
+            background-color: chartreuse;
+        }
+        #box4
+        {
+            background-color: deeppink;
+        }
+        /* @media(min-width:500px) and (max-width:700px)
+        {
+            .box{
+                background-color: green;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">BOX 1</div>
+    <div class="box" id="box2">BOX 2</div>
+    <div class="box" id="box3">BOX 3</div>
+    <div class="box" id="box4">BOX 4</div>
+</div>
+</body>
+</html>
