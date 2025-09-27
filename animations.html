@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 100vw;
+            height: 100vh;
+            background-color: aquamarine;
+            border: 9px solid green;
+            border-radius: 6px;
+            
+        }
+        #rect
+        {
+            width: 280px;
+            height: 80px;
+            background-color: brown;
+            margin: 3px;
+            border: 4px solid black;
+            animation-name: LtoR;
+            position: relative;
+            animation-duration: 3s;
+            animation-delay: 0ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+         }
+        @keyframes LtoR {
+            from
+            {
+            top: 5px;
+            left: 4px;
+            }
+            to {
+                top: 5px;
+                left: 1200px;
+
+            }
+        }
+        #rect1
+        {
+            
+            width: 280px;
+            height: 80px;
+            background-color: brown;
+            margin: 6px;
+            border: 4px solid black;
+            animation-name: RtoL;
+            position: relative;
+            animation-duration: 3s;
+            animation-delay: 0ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes RtoL {
+
+            from
+            {
+            top: 480px;
+            left: 4px;
+            }
+            to {
+                top: 480px;
+                left: 1200px;
+
+            }
+        }
+        #circle
+        {
+            
+            width: 80px;
+            height: 80px;
+            background-color: rgb(190, 242, 34);
+            margin: 2px;
+            border: 4px solid black;
+            border-radius: 60px;
+            animation-name: movearound;
+            /* position: absolute; */
+            position: relative;
+            animation-duration: 3s;
+            animation-delay: 0ms;
+            /* top: 180px;   /* adjust vertical position between rectangles */
+        /* left: 600px;  horizontal center */
+        /* transform-origin: -100px 100px; pivot point for rotation */ 
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes movearound {
+            0%   { top: 0px;   left: 0px; }
+        20%  { top: 300px; left: 200px; }
+        40%  { top: 0px;   left: 400px; }
+        60%  { top: 300px; left: 600px; }
+        80%  { top: 0px;   left: 800px; }
+        100% { top: 300px; left: 1000px; }
+            
+        }
+        /* @keyframes movearound {
+            0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg) ; }
+            
+        } */
+
+        /* @keyframes movearound {
+            0%   { top: 0%;   left: 5%; }
+        30%  { top: 5%; left: 90%; }
+        60%  { top: 60%;   left: 10%; }
+        100% { top: 50%; left: 90%; }
+            
+        } */
+    </style>
+<body>
+    <div class="container">
+        <div id="rect"></div>
+        <div id="rect1"></div>
+        <div id="circle"></div>
+       
+    </div>
+</body>
+</html>
