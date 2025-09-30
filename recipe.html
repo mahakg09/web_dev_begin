@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Project</title>
+    <link rel="shortcut icon" href="recipelogo.html" type="image/x-icon">
+    <style>
+        .container {
+            background-color: #EEEBDD;
+            padding: 20px;
+        }
+
+        .navbar {
+            /* display: inline; */
+            color: white;
+            display: flex;
+            justify-content: end;
+            font-size: 25px;
+            /* background-color: #198063; */
+            margin: 30px;
+            box-shadow: 20px 20px 20px  #074837 ;
+            border: 2px solid black;
+            width: auto;
+
+    background: linear-gradient(to right, rgb(29, 139, 60), rgb(226, 136, 19));
+
+;
+        }
+
+        #head {
+            font-size: 40px;
+            font-family: cursive;
+            border: 4px solid black;
+            width: auto;
+            text-align: center;
+            /* background-image: linear-gradient(to right, #c62128, #fa080c, #cccccc, #646594, #f20f29); */
+            margin: 15px auto;
+            padding: 10px 20px;
+            background-color: #F43E3E;
+            position: sticky;
+            top: 0;
+            
+
+        }
+
+        .navbar a:hover {
+            color: darkorange;
+            text-decoration: underline;
+        }
+
+        .main {
+            width: auto;
+            height: auto;
+            border: 4px solid black;
+            display: flex;
+            background-color: #DFB786;
+            box-shadow: 20px 20px 20px #51412d;
+
+        }
+        .mainsec
+        {
+             width: auto;
+            height: auto;
+            border: 4px solid black;
+            display: flex;
+            background-color: #DFB786;
+             box-shadow: 20px 20px 20px #51412d;
+
+        }
+
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            /* space between menu items */
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: black;
+            color: white;
+        }
+
+        .main2 {
+            display: flex;
+            /* align-items: self-end; */
+            flex-direction: column;
+
+        }
+
+        .main2 img {
+            width: 400px;
+            height: 300px;
+            gap: 20px;
+            border: 5px solid rgb(137, 28, 28);
+            margin: 5px;
+            border-radius: 60px;
+            transition: all 1s;
+            box-shadow: 20px 20px 20px rgb(76, 5, 5);
+
+        }
+        .main2 img:hover{
+            transform: scale(1.1);
+        }
+
+        .ingredients {
+            display: flex;
+            flex-direction: column;
+            /* border: 3px solid firebrick; */
+            /* text-align: center; */
+        }
+
+        .process {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .process h2 {
+            font-size: 34px;
+            margin: 8px;
+            text-align: center;
+            /* border: 4px solid brown; */
+        }
+
+        .ingredients h2 {
+            font-size: 34px;
+            margin: 8px;
+            text-align: center;
+            /* border: 4px solid brown; */
+
+        }
+        #about
+        {
+            width: auto;
+            height: auto;
+            border: 5px solid #035A7D ;
+            border-radius: 10px;
+            background-color: #F57870;
+            box-shadow: 20px 20px 20px #b74545;
+        }
+        #cookbook
+        {
+            
+            width: auto;
+            height: auto;
+            border: 5px solid #035A7D ;
+            border-radius: 10px;
+            background-color: #F57870;
+             box-shadow: 20px 20px 20px #b74545;
+        }
+        .footer
+        {
+            background-color:chocolate;
+            height: 25px;
+            text-align: center;
+            /* font-weight: 200; */
+        }
+        .footer p{
+            font-weight: 600;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="head">
+            🍽️Recipe Eats🍽️
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#about">🔍 About</a></li>
+                <li> <a href="#cookbook">📖 CookBook</a></li>
+                <li> <a href="#profile">👨🏿‍🦱 Profile</a></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <div class="main2">
+                <h1 style="font-size: 44px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">
+                    Paneer Butter Masala</h1>
+
+                <img src="paneerbutter.jpg" alt="">
+
+            </div>
+
+            <div class="ingredients">
+                <h2>Ingredients (Serves 4) ⬇️</h2>
+                <!-- <h2 style="font-size: 34px;">  </h2> -->
+                <ul style="margin: 8px;">
+                    <li>250g paneer (cubed)</li>
+
+                    <li> 2 tablespoons butter</li>
+
+                    <li> 2 tablespoons oil</li>
+
+                    <li> 1 large onion (finely chopped)</li>
+
+                    <li> 2 large tomatoes </li>
+                    <li> 1 tablespoon ginger-garlic paste</li>
+
+                    <li> 1 teaspoon cumin seeds</li>
+
+                    <li> 1/2 teaspoon turmeric powder</li>
+
+                    <li> 1 teaspoon red chili powder</li>
+
+                    <li> 1 teaspoon coriander powder</li>
+
+                    <li> 1/2 teaspoon garam masala</li>
+
+                    <li> 1/4 cup fresh cream</li>
+
+                    <li> 1/4 cup cashew paste (soak cashews and blend with water)</li>
+
+                    <li> Salt to taste</li>
+
+                    <li> Fresh coriander leaves (for garnish)</li>
+
+                    <li> 1 cup water</li>
+
+                </ul>
+
+
+            </div>
+
+            <div class="process">
+                <h2>Step-by-Step Process ⬇️</h2>
+
+                <ol style="margin: 8px;">
+
+                    <li>Prep Paneer & Cashew </li>
+                    <li>Cut paneer into cubes and keep aside.</li>
+
+                    <li>Soak 10-12 cashews in warm water for 15 minutes and grind to a smooth paste.</li>
+
+                    <li>Heat Butter & Oil</li>
+
+                    <li>In a pan, heat 2 tbsp oil + 2 tbsp butter on medium flame.</li>
+
+                    <li>Add cumin seeds; let them splutter.</li>
+
+                    <li>Sauté Onions</li>
+
+                    <li>Add finely chopped onions and sauté until golden brown.</li>
+
+                    <li>Add 1 tbsp ginger-garlic paste and fry for 1-2 minutes until raw smell disappears.</li>
+
+                    <li>Add Spices & Tomato Puree</li>
+
+                    <li>Add turmeric, red chili powder, coriander powder; sauté for 30 seconds.</li>
+
+                    <li>Add tomato puree and cook for 5-6 minutes until oil separates from masala.</li>
+
+                    <li>Mix Cashew Paste</li>
+                    </li>
+                    <li>Stir in cashew paste with 1 cup water.</li>
+
+                    <li>Let it simmer for 5 minutes to thicken the gravy.</li>
+
+                    <li>Add Paneer & Cream</li>
+
+                    <li>Gently add paneer cubes into the gravy.</li>
+
+                    <li>Stir in fresh cream.</li>
+
+                    <li>Sprinkle garam masala and salt to taste.</li>
+
+                    <li>Simmer for 3-4 minutes.</li>
+
+                    <li>Garnish & Serve</li>
+
+                    <li>Garnish with fresh coriander leaves.</li>
+
+                    <li>Serve hot with naan, roti, or steamed rice.</li>
+
+                    <li>Tips:
+
+                        For extra richness, use unsalted butter and full-fat cream.
+
+                        You can lightly fry the paneer cubes before adding for a golden crust.</li>
+
+                </ol>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+            <div class="mainsec">
+    <div class="main2">
+        <h1 style="font-size: 44px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">
+            Dal Makhani</h1>
+        <img  style="height: 400px;"   src="dalmakhni.jpg" alt="A bowl of creamy Dal Makhani">
+    </div>
+
+    <div class="ingredients">
+        <h2>Ingredients (Serves 4-5) ⬇️</h2>
+        <ul style="margin: 8px;">
+            <li>1 cup whole Urad Dal (Black Gram)</li>
+            <li>1/4 cup Rajma (Kidney Beans)</li>
+            <li>4 cups water (for pressure cooking)</li>
+            <li>2 tablespoons butter (or ghee)</li>
+            <li>1 tablespoon oil</li>
+            <li>1 large onion (finely chopped)</li>
+            <li>1 tablespoon ginger-garlic paste</li>
+            <li>2 medium tomatoes (pureed)</li>
+            <li>1 teaspoon cumin powder</li>
+            <li>1 teaspoon coriander powder</li>
+            <li>1/2 teaspoon turmeric powder</li>
+            <li>1 teaspoon red chili powder (adjust to taste)</li>
+            <li>1 teaspoon Garam Masala</li>
+            <li>1/2 cup fresh cream</li>
+            <li>Salt to taste</li>
+            <li>Fresh coriander leaves (for garnish)</li>
+            <li>1 green chili (slit, optional)</li>
+        </ul>
+    </div>
+
+    <div class="process">
+        <h2>Step-by-Step Process ⬇️</h2>
+
+        <ol style="margin: 8px;">
+            <li>Soak Dal & Rajma</li>
+            <li>Wash and soak Urad Dal and Rajma overnight (or for at least 8 hours). Drain the water.</li>
+
+            <li>Pressure Cook</li>
+            <li>Transfer the soaked Dal and Rajma to a pressure cooker with 4 cups of fresh water and a little salt.</li>
+            <li>Cook for 8-10 whistles until the lentils are very soft and mushy.</li>
+
+            <li>Prepare Masala</li>
+            <li>In a separate heavy-bottomed pan, heat **butter** and **oil** on medium heat.</li>
+            <li>Add the finely chopped <strong>onion</strong> and sauté until golden brown.</li>
+            <li>Add **ginger-garlic paste** and <strong>slit green chili</strong> (if using); fry for 1 minute until the raw smell is gone.</li>
+
+            <li>Add Spices & Tomato Puree</li>
+            <li>Add **turmeric, red chili, cumin, and coriander powders**. Sauté for 30 seconds.</li>
+            <li>Pour in the <strong>tomato puree</strong>. Cook the masala for 5-7 minutes, stirring occasionally, until the fat separates.</li>
+
+            <li>Combine and Simmer</li>
+            <li>Add the cooked (and mashed slightly) Dal and Rajma mixture to the masala pan.</li>
+            <li>Stir well, crushing some of the dal against the side of the pan to thicken the gravy.</li>
+            <li>Add 1/2 cup to 1 cup of water if the consistency is too thick.</li>
+            <li>Let it simmer on **low heat** for at least **20-30 minutes**. The longer it simmers, the better the flavor.</li>
+
+            <li>Finish & Garnish</li>
+            <li>Stir in **Garam Masala** and adjust salt.</li>
+            <li>Turn off the heat and stir in the **fresh cream**. (Keep a little cream aside for garnishing).</li>
+            <li>Garnish with a swirl of fresh cream and fresh coriander leaves.</li>
+            <li>Serve hot with plain rice, jeera rice, naan, or tandoori roti.</li>
+        </ol>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div id="about">
+    <h2  style="font-size: 30px;">About Us!💙</h2>
+        <h3 style="font-size: 25px;">Welcome to Our Kitchen! or The Joy of Simple, Delicious Cooking</h3>
+        <p style="font-size: 20px;">Hi ,I'm Mahak Garg , and I started Recipe Eats because I believe home cooking shouldn't be complicated or intimidating. After years of struggling to find reliable, easy-to-follow recipes, I decided to create a space for cooks of all levels."
+"Our mission is simple: to provide tested, straightforward, and flavorful pure vegetarian recipes that you can trust. We focus on simple ingredients and achievable steps so you can spend less time stressing and more time enjoying your meal."
+</p>
+</div>
+
+<br><br><br><br>
+<div id="cookbook">
+    <h2  style="font-size: 30px;">Cook Book!🧑🏿‍🍳</h2>
+        <h3 style="font-size: 25px;">Welcome to Our Cook Book ! </h3>
+        <p style="font-size: 20px;">Breakfast, Lunch, Dinner, Snacks, Desserts, Sides. (e.g., Quick Dinner Ideas)
+By Cuisine	Indian Classics, Global Vegetarian (Italian, Mexican, Asian), Fusion. (e.g., South Indian Dosas or Veg Pasta Dishes)
+By Preparation Time	30-Minute Meals, Freezer-Friendly, Weekend Projects (longer prep).
+By Dietary Need	Vegan, Gluten-Free, Low-Carb, High-Protein.
+By Ingredient	Paneer Dishes, Potato Recipes, Lentils & Beans (like Dal).
+By Cooking Method	Air Fryer Recipes, One-Pot Wonders, Instant Pot.
+</div>
+
+<br>
+<br>
+<br>
+<div class="footer">
+    <p>Recipe Eats &copy; All rights reserved since 2004</p>
+</div>
+
+    </div>
+</body>
+
+</html>
