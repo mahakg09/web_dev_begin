@@ -1,0 +1,106 @@
+ .main
+        {
+            background-color: bisque;
+            display: flex;
+            gap: 25px;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            border: 10px solid rgb(182, 172, 172);
+            width: 400px;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 30px;
+            /* box-sizing: border-box; */
+            height: 600px;
+            
+        }
+        .container2
+        {
+            display: flex;
+            flex-direction: column;
+             border: 10px solid rgb(46, 108, 69); 
+            width: 400px;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            /* border-radius: 30px; */
+            /* box-sizing: border-box; */
+            height: 550px;
+        }
+        #txt p{
+            font-size: 25px;
+            text-align: center;
+        }
+         .container img
+        {
+            /* background-color: bisque; */
+            border-radius: 30px;
+        }
+        #imgcontainer
+        {
+            width: 350px;
+            height: 400px;
+            /* align-items: center; */
+            background-color: rgb(81, 151, 255);
+            text-align: center;
+            border-radius: 30px;
+
+        }
+        #box1,#box2
+        {
+            width: 300px;
+            height: 55px;
+            /* border: 3px solid black; */
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(44, 62, 224);
+            border-radius: 15px;
+            box-shadow: 10px 10px 20px;
+            transition: all 2s;
+        }
+        #box2:hover{
+            transform: scale(0.85);
+        }
+        #box1:hover
+        {
+            transform: scale(0.85);
+        }
+        #txt2
+        {
+            text-align: center;
+        }
+        #card2
+        {
+            width: 398px;
+            height: 200px;
+            /* border-radius: 20px; */
+            margin: 0;
+            padding: 0;
+        }
+        .container3
+        {
+            display: flex;
+            /* flex-direction: ; */
+            border: 6px solid rgb(13, 25, 195);
+            width: 600px;
+            height:200px;
+
+        }
+        .extrass
+        {
+            display: flex;
+            gap: 15px;
+            
+        }
+        #card3
+        {
+            /* background-color: rgb(230, 198, 109); */
+            /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+            background: linear-gradient(115deg, #ffffff, #d4dfed);
+        }
