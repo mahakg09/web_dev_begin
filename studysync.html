@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #f8f9fa, #eef2ff);
+            font-family: 'Poppins', sans-serif;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .header {
+            display: flex;
+            width: 75%;
+            height: 80px;
+            border: none;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            padding: 0 20px;
+
+        }
+
+        .header ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            font-size: 19px;
+            /* text-decoration: none; */
+        }
+
+       .header a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(225, 94, 62);
+        }
+
+        .header button {
+            width: 100px;
+            height: 50px;
+            margin: 6px;
+            border-radius: 10px;
+            background-color: rgb(69, 69, 231);
+            /* font-weight: 900; */
+        }
+
+        .main {
+            display: flex;
+            width: 75%;
+            justify-content: space-around;
+            gap: 30px;
+            margin: 30px;
+
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .header button:hover,
+        .maintext button:hover {
+            background-color: orange;
+            transform: scale(1.05);
+        }
+
+        .mainimg img {
+            width: 350px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 15px 15px 20px;
+            animation: slidefromleft 2s ease forwards;
+        }
+
+        .maintext button {
+            height: 40px;
+            width: 100px;
+            border-radius: 10px;
+            background-color: rgb(34, 34, 241);
+            margin: 7px;
+        }
+
+        .main2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .main2 h1 {
+            font-size: 32px;
+            color: rgb(58, 58, 58);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+
+            .header,
+            .main {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .mainimg img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .company ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+            /* justify-content: ; */
+
+        }
+
+        .company {
+            border: 4px solid gray;
+            background-color: gray;
+            border-radius: 10px;
+            margin: auto;
+
+        }
+
+        .company ul img {
+            border-radius: 10px;
+
+        }
+
+        .company ul li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            color: whitesmoke;
+            justify-content: space-around;
+        }
+
+        @media (max-width: 768px) {
+
+            .company ul {
+                flex-direction: column;
+            }
+
+        }
+
+        .maintext {
+            animation: slidefromleft 2s ease forwards;
+        }
+
+        @keyframes slidefromleft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .grids {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            animation: slidefromright 3s ease forwards;
+
+
+        }
+
+        @media (max-width:768px) {
+            .grids {
+                /* grid-template-rows: repeat(4,1fr); */
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @keyframes slidefromright {
+            0% {
+                opacity: 0;
+                transform: translateY(-200%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+        .grids div {
+            width: 300px;
+            height: 180px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        .last {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            background-color: rgb(208, 208, 208);
+            padding: 10px;
+
+        }
+
+        .grids img {
+            width: 70px;
+            height: 60px;
+            border-radius: 10px;
+            margin: 5px;
+
+        }
+
+        .testimonial-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .testimonial-cards div {
+            border: 3px solid;
+            margin: 15px;
+            width: 350px;
+            min-height: 160px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            box-shadow: 15px 15px 20px;
+        }
+
+        .testimonial-cards div img {
+            width: 70px;
+            align-self: center;
+
+            height: 60px;
+            border-radius: 50%;
+
+
+        }
+
+        .testimonial {
+            text-align: center;
+        }
+        .updates
+        {
+            display: flex;
+            width: auto;
+            /* gap: 24px; */
+            border: 3px solid;
+        }
+        .updates img{
+            width: 100%;
+            height: 100%;
+        }
+        @media (max-width:768px)
+        {
+            .updates
+            {
+                /* display: flex; */
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="logo">
+            <img src="studysync.png" alt="">
+            <h2>StudySync</h2>
+        </div>
+
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <button>Contact Us</button>
+    </div>
+    <br>
+
+
+
+    <div class="main">
+
+        <div class="maintext">
+
+            <div class="para">
+                <p style="font-size: 20px; color: rgb(124, 19, 222);">Very proud to introduce</p>
+                <p style="font-size: 44px; font-weight: 1000;">Seamless Learning for Brighter Futures</p>
+
+                <p style="font-size: 20px; width: 80%;">Our innovative platform offers an effortless and seamless
+                    approach
+                    to learning, empowering students of all ages to achieve brighter futures.Join us on a transformative
+                    journey to simplify education
+                    and unlock your full potential</p>
+                <div class="button">
+                    <button>Start Now</button>
+                    <button>Take tour</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainimg">
+            <img src="studysync1.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div class="main2">
+        <h1>Trusted by the best</h1>
+        <div class="company">
+            <ul>
+                <li><img src="googlr.jpg" alt="" style="width: 30px; height: 30px;">
+                    Google</li>
+                <li><img src="microsft.png" alt="" style="width: 30px; height: 30px;">
+                    Microsoft</li>
+                <li><img src="linkedin.png" alt="" style="width: 30px; height: 30px;">
+                    LinkedIn</li>
+                <li><img src="vectoredu.png" alt="" style="width: 30px; height: 30px;">
+                    VectorEdu</li>
+            </ul>
+
+
+        </div>
+    </div>
+    <br>
+
+    <div class="last">
+        <h1>Our Competitive advantage</h1>
+        <p style="width: 65%;"> This is a section of some simple filler text, also known as placeholder tex. it shares
+            some charcterstics of real written text but is randam or otherwise generated Lorem ipsum dolor sit amet
+            consectetur.</p>
+        <div class="grids">
+            <div style="background-color: rgb(255, 77, 240);">
+                <img src="presonlised.png" alt="">
+                <h3>Personalised Learning</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit expedita dignissimos
+                    ullam animi fugiat?</p>
+            </div>
+            <div style="background-color: rgb(99, 246, 241) ;">
+                <img src="affordabiloty.png" alt="">
+                <h3>Affordability</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur velit minima dicta?</p>
+            </div>
+            <div style="background-color: yellow;">
+                <img src="partnership.jpg" alt="">
+                <h3>Industry Partnerships</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur laboriosam provident eos!</p>
+            </div>
+            <div style="background-color: rgb(73, 240, 73);">
+                <img src="learning.png" alt="">
+                <h3>Innovative technology</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id libero cumque facere minima?</p>
+            </div>
+            <div style="background-color: plum;">
+                <img src="responsive.png" alt="">
+                <h3>Responsive Support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id libero cumque facere minima?</p>
+            </div>
+            <div style="background-color: rgb(114, 114, 220);">
+                <img src="analytics.png" alt="">
+                <h3>Analytics and Insights</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id libero cumque facere minima?</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="testimonial">
+        <h1>What Others Say About Us</h1>
+        <div class="testimonial-cards">
+            <div>
+                <h2>lore, ipsum</h2>
+                <img src="testimonial1.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quasi iste nihil!</p>
+            </div>
+
+            <div>
+                <h2>amet alit</h2>
+                <img src="testimonial2.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugiat delectus impedit.</p>
+            </div>
+            <div>
+                <h2>iste nihill</h2>
+                <img src="testiminial3.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, minus.hgbkjh
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="updates">
+        <div class="updateimg">
+            <img src="updatess.jpg" alt="">
+        </div>
+        <div class="updatetxt" style="padding: 7px; background-color: rgb(191, 191, 191);">
+            <h1>Get the Latest Updates</h1>
+            <p>Sign up for our newslwtter</p>
+            <form>
+                <input type="text" placeholder="Email">
+                <button style="background-color: blue; width: 70px; height: 30px; border-radius: 10px;">Send</button>
+            </form>
+            <p>By signing up to our newsletter you agree to our <a href="#Term of Service">Term of Service</a> and <a href="#Privacy Policy">Privacy Policy</a></p>
+        </div>
+
+    </div>
+
+
+    </div>
+</body>
+
+</html>
